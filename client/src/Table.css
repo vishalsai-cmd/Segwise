@@ -9,7 +9,7 @@
 }
 
 .creative-table {
-  width: 100%;
+  /* width: 100%; */
   border-collapse: collapse;
   font-size: 14px;
 }
@@ -76,26 +76,4 @@
   .creative-table td {
     padding: 8px 12px;
   }
-}
-
-.creative-table tr {
-  transition: background-color 0.2s ease;
-}
-
-.creative-table tr:last-child td {
-  border-bottom: none;
-}
-
-.creative-table tr.active-row {
-  background-color: #f1f5f9;
-}
-
-
-@keyframes fadeIn {
-  from { opacity: 0.5; }
-  to { opacity: 1; }
-}
-
-.creative-table tbody tr {
-  animation: fadeIn 0.3s ease;
 }
