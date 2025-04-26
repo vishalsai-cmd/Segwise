@@ -1,0 +1,101 @@
+
+.table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin-top: 24px;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.creative-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.creative-table th {
+  background-color: #f8fafc;
+  color: #64748b;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+}
+
+.creative-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+.creative-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.sortable-header {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.sortable-header:hover {
+  background-color: #f1f5f9;
+}
+
+.sort-icon {
+  margin-left: 6px;
+  font-size: 12px;
+}
+
+.tag-pill {
+  display: inline-block;
+  background-color: #e2e8f0;
+  color: #334155;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+
+.metric-cell {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+}
+
+
+@media (max-width: 768px) {
+  .table-container {
+    border-radius: 8px;
+  }
+  
+  .creative-table th, 
+  .creative-table td {
+    padding: 8px 12px;
+  }
+}
+
+.creative-table tr {
+  transition: background-color 0.2s ease;
+}
+
+.creative-table tr:last-child td {
+  border-bottom: none;
+}
+
+.creative-table tr.active-row {
+  background-color: #f1f5f9;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+.creative-table tbody tr {
+  animation: fadeIn 0.3s ease;
+}
